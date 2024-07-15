@@ -1,0 +1,36 @@
+{
+  "name": "demo-npm-package-test",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "This is a demo npm-package for testing publishing features",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kononenko-Daniil/demo-npm-package"
+  },
+  "bugs": {
+    "url": "https://github.com/Kononenko-Daniil/demo-npm-package/issues"
+  },
+  "scripts": {
+    "build:dev": "rollup -c --environment NODE_ENV:development",
+    "build": "rollup -c --environment NODE_ENV:production"
+  },
+  "keywords": [
+    "react",
+    "test",
+    "demo"
+  ],
+  "author": "Kononenko-Daniil",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "prettier": "^3.3.3",
+    "prettier-plugin-organize-imports": "^4.0.0",
+    "rollup": "^4.18.1"
+  }
+}
